@@ -6,7 +6,6 @@ import TravelCard from './TravelCard'
 import './App.css';
 import { Container, Row, Col, Dropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import axios from 'axios'
 class App extends Component {
 constructor() {
  super();
