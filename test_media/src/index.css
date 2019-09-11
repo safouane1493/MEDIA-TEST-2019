@@ -1,0 +1,30 @@
+
+@font-face {
+  font-family: 'SevenOneEight-Black';
+  src:  url('../fonts/SevenOneEight-Black.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'SevenOneEight-Book';
+  src:  url('../fonts/SevenOneEight-Book.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'SevenOneEight-ExtraBold';
+  src:  url('../fonts/SevenOneEight-ExtraBold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'SevenOneEight-Light';
+  src:  url('../fonts/SevenOneEight-Light.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'SevenOneEight-Medium';
+  src:  url('../fonts/SevenOneEight-Medium.ttf') format('ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+  background: #e2e1e1;
+  margin-bottom: 100px;
+}
