@@ -26,20 +26,17 @@ this.setState({listDestinations : dataDest.destinations})
   render() {
   
     return (
+      <div>
       <div className="App container">
        
           <Title />
 
-        <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div>
+
+          <select style={{marginTop: 25, height : 30}} onChange={(e) => this.setState({value: event.target.value,listDestinations : this.state.listDestinations.filter(item => (item.country === event.target.value)? true : false)})}>
+            <option>Sélectionner un pays</option>
+            {this.state.listDestinations.map(elem => <option value={elem.country}>{elem.country}</option>)}
+          </select>
+
            <div className="row cardsBlock" >
              {this.state.listDestinations.map( elem => <TravelCard data={elem} />)}
           
@@ -48,9 +45,11 @@ this.setState({listDestinations : dataDest.destinations})
           </div>
           <Inscription />
 
-          <BottomBanner />
+         
         
       </div>
+       <BottomBanner />
+       </div>
     );
   }
 }
